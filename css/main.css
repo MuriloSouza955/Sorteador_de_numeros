@@ -43,5 +43,17 @@
 
     --label-medium: 700 1.25rem/150% var(--font_RobotoFlex);
     --label-small: 700 1rem/150% var(--font_RobotoFlex);
+}
 
+body{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--background-primary);
+    background-image: url("/assets/Shapes.png");
+    background-repeat: repeat;
+    
+    h1{
+        font: var(--display-large);
+        color: var(--content-primary);
+    }
 }
