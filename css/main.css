@@ -124,16 +124,92 @@ ul{
 }
 
 .aside{
-    margin-top: 7rem;
-    margin-left: 9rem;
-    padding-bottom: 2rem;
-    h1 {
-        margin-top: 2rem;
-        font: var(--label-medium);
-    }
-    p{
-        font: var(--pragraph-large);
-        color: var(--content-secondary);
-        margin-bottom: 1.5rem;
+  margin-top: 7rem;
+  margin-left: 9rem;
+  padding-bottom: 2rem;
+  align-items: center;
+  h1 {
+    margin-top: 2rem;
+    font: var(--label-medium);
+  }
+  p{
+    font: var(--pragraph-large);
+    color: var(--content-secondary);
+    margin-bottom: 2.5rem;
+  };
+  .legenda{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 15rem;
+    h2{
+      font: var(--pragraph-medium);
+      color: var(--content-secondary);
+      margin-bottom: 1.5rem;
     };
+  }
+  .inputs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 18rem;
+    input{
+
+      background-color: var(--background-secondary);
+      width: 4rem;
+      height: 3rem;
+      text-align: center;
+      border-radius: 0.5rem;
+      font: var(--pragraph-medium);
+      color: var(--content-primary);
+    }
+    
+  }
+  .no-repeat-container {
+    display: flex;
+    align-items: center;
+    margin-top: 1.5rem;
+  }
+  #no-repeat{
+    -webkit-appearance: none;
+    position: relative;
+    width: 50px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 25px;
+    background-color: #ccc;
+    transition: background 0.3s;
+    outline: none;
+    margin-top: 0;
+  }
+  #no-repeat::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    width: 1.25rem;
+    height: 1.25rem;
+    background-color: rgb(255, 255, 255);
+    transition: left 0.3s;
+  }
+  #no-repeat:checked{
+    background-color: var(--content-brand);
+  }
+  #no-repeat:checked::after{
+    left: 70%;
+  }
+  label{
+    font: var(--label-medium);
+    color: var(--content-secondary);
+    padding-left: .7rem;
+  }
+  .btn{
+    -webkit-appearance: none;
+    margin-top: 1rem;
+    cursor: pointer;
+    border-radius: .5rem;
+    border: none
+  }
 }

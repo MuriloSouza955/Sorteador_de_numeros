@@ -52,6 +52,41 @@
           defina o intervalo e a quantidade de números, clique em "Sortear"<br />
           e veja os resultados na tela. É rápido e fácil!
         </p>
+        <div class="legenda">
+          <h2>NÚMEROS</h2>
+          <h2>DE</h2>
+          <h2>ATÉ</h2>
+        </div>
+        <div class="inputs">
+          <input
+            type="number"
+            id="quantity"
+            placeholder="1"
+            min="1"
+            max="1000000"
+            />
+          <input
+            type="number"
+            id="min"
+            placeholder="0"
+            min="0"
+            max="1000000"
+          />
+          <input
+            type="number"
+            id="max"
+            placeholder="100"
+            min="0"
+            max="1000000"
+          />
+        </div>        
+        <div class="no-repeat-container">
+          <input type="checkbox" id="no-repeat">
+          <label for="no-repeat">Não repetir número</label>
+        </div>
+        <button id="sortear" class="btn">
+          <img src="/assets/sortear.png" alt="Sortear" />
+        </button>
       </asside>
     </main>
   </body>
